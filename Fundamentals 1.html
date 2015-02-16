@@ -1,0 +1,31 @@
+<script type="text/javascript">
+//1
+x=[3,5,'Dojo','rocks',{name:'Michael',title:'Sensei'}];
+for (var i=0;i<x.length;i++){
+	console.log(x[i]);
+	console.log(typeof(x[i]));
+}
+//2
+x.push(100);
+//3
+x.push([]);
+console.log(x);
+//4
+var sum=0;
+for (var i=0;i<500;i++){
+sum=sum+i;
+}
+console.log(sum);
+//5
+var sum=0;
+var a=new Date();
+var beforeTime=a.getTime();
+console.log(beforeTime)
+for (var i=0;i<1000000;i++){
+sum=sum+i;
+}
+var b=new Date();
+var afterTime=b.getTime();
+console.log(afterTime);
+console.log(sum);
+</script>
